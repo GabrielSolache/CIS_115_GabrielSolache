@@ -1,0 +1,6 @@
+cc = input("Enter credit card number: ")
+exp = input("Enter expiration date (MM/YY): ")
+cvv = input("Enter CVV: ")
+print(f"Credit Card Number: {cc}")
+print(f"Expiration Date: {exp}")
+print(f"CVV: {cvv}")
