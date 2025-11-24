@@ -35,3 +35,21 @@ def main():
         qty = input(f"How many '{product['name']}'? ")  # Ask for quantity.
         if not qty.isdigit() or int(qty) <= 0:           # Validate quantity.
             print("Please enter a valid quantity.")
+        #  Add the selected product and quantity to the cart.
+        cart.append({"product": product, "qty": int(qty)})
+        print(f"Added {qty} x {product['name']} to cart.")
+
+    if not cart:  # If cart is empty, end program.
+        print("Your cart is empty. Goodbye!")
+        return
+
+    # Collect user's name and address for shipping.
+    print("\nCheckout")
+    name = input("Your Name: ")
+    address = input("Address: ")
+
+    # Collect credit card information for payment.
+    print("\nPayment Information")
+    cc_number = input("Credit Card Number: ")
+    cc_expiry = input("Expiration Date (MM/YY): ")
+    cc_cvv = input("CVV: ")
