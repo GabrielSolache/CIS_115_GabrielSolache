@@ -53,3 +53,9 @@ def main():
     cc_number = input("Credit Card Number: ")
     cc_expiry = input("Expiration Date (MM/YY): ")
     cc_cvv = input("CVV: ")
+
+    # Print invoice
+    print("\n--- Invoice ---")
+    print(f"Name: {name}")
+    print(f"Address: {address}")
+    total = 0 
